@@ -1,0 +1,2 @@
+rootProject.name='SquareGame(CONNECTED)'
+include ':app'
