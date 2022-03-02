@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Connecting the button with id button_play to the activity SelectionPage on click
         button = (Button) findViewById(R.id.button_play);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SquareGame(CONNECTED)</string>
 
-    <string-array name = "grid">
+    <string-array name="grid">
         <item>3 X 3 </item>
         <item>4 X 4 </item>
         <item>5 X 5 </item>
