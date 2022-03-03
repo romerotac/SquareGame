@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     ImageView settingsButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
