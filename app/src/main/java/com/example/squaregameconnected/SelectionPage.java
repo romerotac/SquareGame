@@ -41,3 +41,4 @@ public class SelectionPage extends AppCompatActivity {
             startActivity(intent_game);
         }
 }
+
