@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     Button guide_btn;
     ImageView question_mark_btn;
+    ImageView settingsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,15 +47,34 @@ public class MainActivity extends AppCompatActivity {
                 openGuideActivity();
             }
         });
+
+        // settings button on main page go to settings activity
+        settingsButton = (ImageView) findViewById(R.id.setting_buttonhome);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openSettingsActivity();
+            }
+        });
+
     }
+
 
     public void openSelectionPage() {
         Intent intent = new Intent(this, SelectionPage.class);
         startActivity(intent);
     }
 
+
     public void openGuideActivity() {
         Intent intent = new Intent(this, GuideActivity.class);
         startActivity(intent);
     }
+
+    public void openSettingsActivity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+
 }
