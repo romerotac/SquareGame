@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView question_mark_btn;
     ImageView settingsButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
