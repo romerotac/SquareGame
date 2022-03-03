@@ -589,5 +589,13 @@
         app:layout_constraintVertical_bias="0.18"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="282dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
