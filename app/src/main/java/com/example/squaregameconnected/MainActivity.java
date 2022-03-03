@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private Button button;
     Button guide_btn;
-    ImageView question_mark_btn;
     ImageView settingsButton;
 
 
@@ -28,15 +27,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openSelectionPage();
-            }
-        });
-
-        // button question mark go to guide activity
-        question_mark_btn = (ImageView) findViewById(R.id.question_mark_button);
-        question_mark_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openGuideActivity();
             }
         });
 

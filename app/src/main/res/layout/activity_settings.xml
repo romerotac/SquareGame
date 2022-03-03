@@ -7,31 +7,17 @@
     android:background="#BC6E7E"
     tools:context=".SettingsActivity">
 
-    <TextView
-        android:id="@+id/settingsTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:textAllCaps="true"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/settingsBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
-
     <View
         android:id="@+id/settingsBox"
-        android:layout_width="338dp"
-        android:layout_height="616dp"
+        android:layout_width="330dp"
+        android:layout_height="507dp"
         android:background="#C4C4C4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.612" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <Button
         android:id="@+id/settingsApply"
@@ -95,5 +81,15 @@
         app:layout_constraintEnd_toStartOf="@+id/seekBar2"
         app:layout_constraintStart_toStartOf="@+id/settingsBox"
         app:layout_constraintTop_toTopOf="@+id/settingsBox" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="355dp"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings_black_and_yellow_removed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
