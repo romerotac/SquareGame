@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC6E7E"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Settings"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/settingsBox"
+        android:layout_width="333dp"
+        android:layout_height="473dp"
+        android:background="#C4C4C4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/settingsApply"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:background="#D5CF36"
+        android:text="Apply"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsBox"
+        app:layout_constraintEnd_toEndOf="@+id/settingsBox"
+        app:layout_constraintStart_toStartOf="@+id/settingsBox"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+    <Button
+        android:id="@+id/settingCancel"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:background="#D53636"
+        android:text="Cancel"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settingsBox"
+        app:layout_constraintStart_toStartOf="@+id/settingsBox"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="113dp"
+        android:layout_height="21dp"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="113dp"
+        android:layout_height="21dp"
+        app:layout_constraintEnd_toEndOf="@+id/settingsBox"
+        app:layout_constraintStart_toStartOf="@+id/settingsBox"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sounds:"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTitle"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music:"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingsApply"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="@+id/settingsBox"
+        app:layout_constraintTop_toTopOf="@+id/settingsBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

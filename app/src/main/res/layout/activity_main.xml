@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/setting_buttonhome"
         android:layout_width="67dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
