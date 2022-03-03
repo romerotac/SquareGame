@@ -13,8 +13,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private Button button;
     Button guide_btn;
+    ImageView question_mark_btn;
     ImageView settingsButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        // button question mark go to guide activity
+        question_mark_btn = (ImageView) findViewById(R.id.question_mark_button);
+        question_mark_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGuideActivity();
+            }
+        });
+
+
         // guide button on main page go to guide activity
         guide_btn = (Button) findViewById(R.id.guide_button);
         guide_btn.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 openGuideActivity();
             }
         });
+
 
         // settings button on main page go to settings activity
         settingsButton = (ImageView) findViewById(R.id.setting_buttonhome);
@@ -56,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     public void openGuideActivity() {
         Intent intent = new Intent(this, GuideActivity.class);
         startActivity(intent);
@@ -66,6 +77,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
-
 
 }
