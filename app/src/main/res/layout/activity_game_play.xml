@@ -349,8 +349,8 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="19dp"
-        android:layout_height="21dp"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/button99"
         app:layout_constraintHorizontal_bias="0.903"
@@ -446,7 +446,7 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="19dp"
+        android:layout_width="12dp"
         android:layout_height="21dp"
         app:layout_constraintBottom_toTopOf="@+id/button88"
         app:layout_constraintEnd_toStartOf="@+id/button111111"
@@ -536,20 +536,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.642" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="35dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="40dp"
-        android:background="#BC6E7E"
-        app:layout_constraintBottom_toTopOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.009"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="61dp"
@@ -570,10 +556,10 @@
         android:layout_marginTop="76dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <ImageView
@@ -583,11 +569,23 @@
         android:layout_marginTop="76dp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/question_mark_button"
+        android:layout_width="68dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/question_mark_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
