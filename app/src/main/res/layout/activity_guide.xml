@@ -7,56 +7,47 @@
     tools:context=".GuideActivity"
     android:background="#BC6E7E">
 
-    <ImageView
-        android:id="@+id/go_back_button"
-        android:layout_width="51dp"
-        android:layout_height="87dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/go_back_button" />
-
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/guide_text"
         android:layout_width="363dp"
         android:layout_height="205dp"
         android:layout_marginBottom="276dp"
-        android:text="The object of the game is to form a square by joining four dots. When a player draws a line that closes a square, she writes her initials inside the square and gets a bonus turn. When all possible lines have been drawn, the player with the most initialed squares is the winner."
+        android:text="@string/the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/how_to_play_view"
         android:layout_width="345dp"
         android:layout_height="87dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.64"
-        app:layout_constraintStart_toEndOf="@+id/go_back_button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintVertical_bias="0.049"
         app:srcCompat="@drawable/how_to_play_black_and_yellow_removed" />
 
     <TextView
         android:id="@+id/objective_text"
         android:layout_width="161dp"
         android:layout_height="44dp"
-        android:text="Objective"
+        android:text="@string/objective"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/guide_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintTop_toBottomOf="@+id/how_to_play_view"
+        app:layout_constraintVertical_bias="0.494" />
 
     <ImageView
         android:id="@+id/imageView26"
@@ -65,7 +56,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/example_game" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

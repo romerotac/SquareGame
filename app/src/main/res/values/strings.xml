@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">SquareGame(CONNECTED)</string>
+    <string name="the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner">The object of the game is to form a square by joining four dots. When a player draws a line that closes a square, she writes her initials inside the square and gets a bonus turn. When all possible lines have been drawn, the player with the most initialed squares is the winner.</string>
+    <string name="objective">Objective</string>
+    <string name="guide">Guide</string>
 
     <string-array name="grid">
         <item>3 X 3 </item>

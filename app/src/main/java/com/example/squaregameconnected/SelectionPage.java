@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.content.Intent;
 
 public class SelectionPage extends AppCompatActivity {
     private Button button_gameplay;
+    ImageView question_mark_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,26 @@ public class SelectionPage extends AppCompatActivity {
                         android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.grid));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         gridSpinner.setAdapter(myAdapter);
+
+
+        // button question mark go to guide activity
+        question_mark_btn = (ImageView) findViewById(R.id.question_mark_button);
+        question_mark_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGuideActivity();
+            }
+        });
     }
 
-    public void openGamePlay(){
+    public void openGamePlay() {
         Intent intent_game = new Intent (this,GamePlay.class);
             startActivity(intent_game);
-        }
+    }
+
+    public void openGuideActivity() {
+        Intent intent = new Intent(this, GuideActivity.class);
+        startActivity(intent);
+    }
 }
 
