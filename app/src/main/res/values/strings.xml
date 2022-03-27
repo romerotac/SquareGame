@@ -4,6 +4,16 @@
     <string name="objective">Objective</string>
     <string name="guide">Guide</string>
 
+
+    <string-array name="colors">
+        <item>Blue  </item>
+        <item>Cyan </item>
+        <item>Green </item>
+        <item>Magenta </item>
+        <item>Red </item>
+        <item>Yellow </item>
+    </string-array>
+
     <string-array name="grid">
         <item>3 X 3 </item>
         <item>4 X 4 </item>
