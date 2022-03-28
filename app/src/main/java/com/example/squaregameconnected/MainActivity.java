@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        /**
         // button question mark go to guide activity
         question_mark_btn = (ImageView) findViewById(R.id.question_mark_button);
         question_mark_btn.setOnClickListener(new View.OnClickListener() {
@@ -39,9 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 openGuideActivity();
             }
         });
-
-
-        // guide button on main page go to guide activity
+         */
+         // guide button on main page go to guide activity
         guide_btn = (Button) findViewById(R.id.guide_button);
         guide_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 openSettingsActivity();
             }
+
         });
 
     }
