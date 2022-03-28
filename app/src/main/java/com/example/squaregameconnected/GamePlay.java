@@ -8,11 +8,15 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class GamePlay extends AppCompatActivity {
@@ -23,6 +27,7 @@ public class GamePlay extends AppCompatActivity {
     int integer_color_player1 = Color.GREEN;
     int integer_color_player2 = Color.YELLOW;
     int integer_color_used;
+    int totChecked = 0;
     boolean setplayer = true;
     private static final int[] buttonArray = {R.id.button3,R.id.button10,R.id.button12,
             R.id.button9,R.id.button11,R.id.button14,R.id.button999,R.id.button111111,
@@ -51,8 +56,8 @@ public class GamePlay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //hide the top part of the app (blue part)
-        getSupportActionBar().hide();
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getSupportActionBar().hide();
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_game_play);
 
@@ -65,7 +70,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn1_1.setBackgroundColor(integer_color_used);
                     buttonColumn1_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
 
                 }
@@ -78,7 +84,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn1_2.setBackgroundColor(integer_color_used);
                     buttonColumn1_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -90,7 +97,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn1_3.setBackgroundColor(integer_color_used);
                     buttonColumn1_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -102,7 +110,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn1_4.setBackgroundColor(integer_color_used);
                     buttonColumn1_4.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -114,7 +123,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn2_1.setBackgroundColor(integer_color_used);
                     buttonColumn2_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -126,7 +136,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn2_2.setBackgroundColor(integer_color_used);
                     buttonColumn2_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -138,7 +149,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn2_3.setBackgroundColor(integer_color_used);
                     buttonColumn2_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -150,7 +162,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn2_4.setBackgroundColor(integer_color_used);
                     buttonColumn2_4.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -162,7 +175,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn3_1.setBackgroundColor(integer_color_used);
                     buttonColumn3_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -174,7 +188,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn3_2.setBackgroundColor(integer_color_used);
                     buttonColumn3_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -186,7 +201,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn3_3.setBackgroundColor(integer_color_used);
                     buttonColumn3_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -198,7 +214,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonColumn3_4.setBackgroundColor(integer_color_used);
                     buttonColumn3_4.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -210,7 +227,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow1_1.setBackgroundColor(integer_color_used);
                     buttonRow1_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -222,7 +240,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow1_2.setBackgroundColor(integer_color_used);
                     buttonRow1_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -234,7 +253,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow1_3.setBackgroundColor(integer_color_used);
                     buttonRow1_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -246,7 +266,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow2_1.setBackgroundColor(integer_color_used);
                     buttonRow2_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -258,7 +279,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow2_2.setBackgroundColor(integer_color_used);
                     buttonRow2_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -270,7 +292,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow2_3.setBackgroundColor(integer_color_used);
                     buttonRow2_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -282,7 +305,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow3_1.setBackgroundColor(integer_color_used);
                     buttonRow3_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -294,7 +318,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow3_2.setBackgroundColor(integer_color_used);
                     buttonRow3_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -306,7 +331,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow3_3.setBackgroundColor(integer_color_used);
                     buttonRow3_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -318,7 +344,8 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow4_1.setBackgroundColor(integer_color_used);
                     buttonRow4_1.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -330,19 +357,24 @@ public class GamePlay extends AppCompatActivity {
                     setPlayerButtonResponse();
                     buttonRow4_2.setBackgroundColor(integer_color_used);
                     buttonRow4_2.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
+
+
 
             buttonRow4_3 = (Button) findViewById(R.id.button1414);
             buttonRow4_3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     setPlayerButtonResponse();
                     buttonRow4_3.setBackgroundColor(integer_color_used);
                     buttonRow4_3.setEnabled(false);
-                    //checkAllChecked();
+                    totChecked++;
+                    checkAllChecked(totChecked);
                     setplayer = !setplayer;
                 }
             });
@@ -365,8 +397,7 @@ public class GamePlay extends AppCompatActivity {
                 }
             });
 
-            //check if all the button have filled color
-            //checkAllChecked();
+
 
             //if the game has at least one button with no fill color it will change the value of the
             //player to the second player (player1 = true, player2 = false)
@@ -395,17 +426,16 @@ public class GamePlay extends AppCompatActivity {
         }
     }
 
-    public void checkAllChecked(){
-
-        for (i = 0; i<buttonArray.length;i++){
-            Button momentaryButton = (Button)findViewById(buttonArray[i]);
-            ColorDrawable viewColor = (ColorDrawable)momentaryButton.getBackground();
-            int colorNow = viewColor.getColor();
-            if (colorNow == integer_color_player1 || colorNow == integer_color_player2){
-                continue;
-            }else{
-                break;
-            }
+    //check if all the button have filled color
+    public void checkAllChecked(int number_checked){
+        if(number_checked == 24){
+            LayoutInflater inflater = getLayoutInflater();
+            View layout = inflater.inflate(R.layout.toast_winning_layout,(ViewGroup)findViewById(R.id.toast_root));
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.CENTER,0,0);
+            toast.setDuration(Toast.LENGTH_SHORT);
+            toast.setView(layout);
+            toast.show();
         }
 
     }
