@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
@@ -61,7 +62,12 @@ public class MainActivity extends AppCompatActivity {
                 openSettingsActivity();
             }
 
+
+
+
         });
+
+
 
     }
 
@@ -81,4 +87,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
+
+
+
+
+
+
+
 }
+
+

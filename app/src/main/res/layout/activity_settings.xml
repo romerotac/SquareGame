@@ -24,7 +24,8 @@
         android:layout_width="202dp"
         android:layout_height="93dp"
         android:background="#D5CF36"
-        android:text="Apply"
+        android:onClick="PlayBackgroundSound"
+        android:text="Play Sound"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/settingsBox"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,5 +92,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/settings_black_and_yellow_removed" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
