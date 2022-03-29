@@ -18,6 +18,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Objects;
@@ -25,6 +26,11 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class GamePlay extends AppCompatActivity {
 
+    TextView point_of_player_1;
+    TextView point_of_player_2;
+
+    int counter_1 = 0;
+    int counter_2 = 0;
 
     int integer_color_player1 = Color.GREEN;
     int integer_color_player2 = Color.YELLOW;
@@ -34,7 +40,6 @@ public class GamePlay extends AppCompatActivity {
     boolean winplayer = false;
 
     int i;
-
 
     ImageView question_mark_btn;
     ImageView settingsButton;
@@ -605,12 +610,35 @@ public class GamePlay extends AppCompatActivity {
     public void checkAllChecked(int number_checked){
         if(number_checked == 24){
             Context context = getApplicationContext();
-            CharSequence text = "RESULT!";
+            CharSequence text = "RESULT!" + counter_1 + " " + counter_2;
             int duration = Toast.LENGTH_SHORT;
+            String winner_player;
+//            Toast toast = Toast.makeText(context, text, duration);
+//            toast.show();
 
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
-            openResultActivity();
+
+            Bundle bundle = new Bundle();
+
+            // tie is not handled
+            if (counter_1 > counter_2) {
+                winner_player = "player_1";
+                bundle.putString("Winner", winner_player);
+
+            }
+            if (counter_1 < counter_2){
+                winner_player = "player_2";
+                bundle.putString("Winner", winner_player);
+            }
+            if (counter_1 == counter_2) {
+                bundle.putString("Winner", "tie");
+            }
+
+            Intent intent = new Intent(this, ResultActivity.class);
+            intent.putExtras(bundle);
+
+            startActivity(intent);
+
+//            openResultActivity();
         }
 
     }
@@ -624,21 +652,31 @@ public class GamePlay extends AppCompatActivity {
     public void checkGetPoint(){
         String message = "This is the player who got the square: ";
 
-        if (setplayer == true){
+        point_of_player_1 = findViewById(R.id.first_player_point);
+        point_of_player_2 = findViewById(R.id.second_player_point);
+
+        if (setplayer == true) {
             message += "player 1";
-        }else{
+        } else {
             message += "player 2";
         }
-        //Toast.makeText(GamePlay.this,message, Toast.LENGTH_SHORT).show();
+
         int count_square1 = 0;
             if(check_square1 == false) {
                 for (int i = 0; i < square1.length; i++) {
                     if (!square1[i]) {
                         count_square1++;
                         if (count_square1 == square1.length) {
-                            Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                             winplayer = true;
                             check_square1 = true;
+                            if (setplayer) {
+                                counter_1++;
+                                point_of_player_1.setText(String.valueOf(counter_1));
+                            } else {
+                                counter_2++;
+                                point_of_player_2.setText(String.valueOf(counter_2));
+                            }
                         }
                     }
 
@@ -651,9 +689,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square2[i]) {
                     count_square2++;
                     if (count_square2 == square2.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square2 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -666,9 +711,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square3[i]) {
                     count_square3++;
                     if (count_square3 == square3.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square1 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -681,9 +733,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square4[i]) {
                     count_square4++;
                     if (count_square4 == square4.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square4 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -696,9 +755,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square5[i]) {
                     count_square5++;
                     if (count_square5 == square5.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square5 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -711,9 +777,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square6[i]) {
                     count_square6++;
                     if (count_square6 == square6.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square6 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -726,9 +799,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square7[i]) {
                     count_square7++;
                     if (count_square7 == square7.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square7 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -741,9 +821,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square8[i]) {
                     count_square8++;
                     if (count_square8 == square8.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square8 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
@@ -756,9 +843,16 @@ public class GamePlay extends AppCompatActivity {
                 if (!square9[i]) {
                     count_square9++;
                     if (count_square9 == square9.length) {
-                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
                         check_square9 = true;
+                        if (setplayer) {
+                            counter_1++;
+                            point_of_player_1.setText(String.valueOf(counter_1));
+                        } else {
+                            counter_2++;
+                            point_of_player_2.setText(String.valueOf(counter_2));
+                        }
                     }
                 }
 
