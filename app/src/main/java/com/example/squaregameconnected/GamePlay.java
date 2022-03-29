@@ -3,6 +3,7 @@ package com.example.squaregameconnected;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -17,6 +18,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import java.util.Objects;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class GamePlay extends AppCompatActivity {
@@ -56,8 +59,8 @@ public class GamePlay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //hide the top part of the app (blue part)
-        //getSupportActionBar().hide();
-        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_game_play);
 
@@ -429,15 +432,20 @@ public class GamePlay extends AppCompatActivity {
     //check if all the button have filled color
     public void checkAllChecked(int number_checked){
         if(number_checked == 24){
-            LayoutInflater inflater = getLayoutInflater();
-            View layout = inflater.inflate(R.layout.toast_winning_layout,(ViewGroup)findViewById(R.id.toast_root));
-            Toast toast = new Toast(getApplicationContext());
-            toast.setGravity(Gravity.CENTER,0,0);
-            toast.setDuration(Toast.LENGTH_SHORT);
-            toast.setView(layout);
+            Context context = getApplicationContext();
+            CharSequence text = "RESULT!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
             toast.show();
+            openResultActivity();
         }
 
+    }
+
+    public void openResultActivity() {
+        Intent intent = new Intent(this, ResultActivity.class);
+        startActivity(intent);
     }
 
 }
