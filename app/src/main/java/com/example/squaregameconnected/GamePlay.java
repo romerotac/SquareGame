@@ -34,7 +34,7 @@ public class GamePlay extends AppCompatActivity {
     int integer_color_used;
     int totChecked = 0;
     boolean setplayer = true;
-
+    boolean winplayer = false;
 
     int i;
 
@@ -95,8 +95,12 @@ public class GamePlay extends AppCompatActivity {
                     square1[0] = false;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
-
+                    //check if the player has already win one time boolean is set in checkGetPoint()
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -112,7 +116,11 @@ public class GamePlay extends AppCompatActivity {
                     square2[0] = false;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -128,7 +136,12 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -143,7 +156,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -158,7 +175,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -174,7 +195,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -190,7 +215,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -205,7 +234,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -220,7 +253,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -236,7 +273,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -252,7 +293,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -267,7 +312,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -282,7 +331,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -297,7 +350,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -312,7 +369,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -328,7 +389,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -344,7 +409,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -360,7 +429,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -376,7 +449,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -392,7 +469,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -408,7 +489,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -423,7 +508,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -438,7 +527,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -456,7 +549,11 @@ public class GamePlay extends AppCompatActivity {
                     totChecked++;
                     checkAllChecked(totChecked);
                     checkGetPoint();
-                    setplayer = !setplayer;
+                    if (winplayer == false) {
+                        setplayer = !setplayer;
+                    }else{
+                        winplayer = false;
+                    }
                 }
             });
 
@@ -550,6 +647,7 @@ public class GamePlay extends AppCompatActivity {
                         count_square1++;
                         if (count_square1 == square1.length) {
                             Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                            winplayer = true;
                             check_square1 = true;
                         }
                     }
@@ -564,6 +662,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square2++;
                     if (count_square2 == square2.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square2 = true;
                     }
                 }
@@ -578,6 +677,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square3++;
                     if (count_square3 == square3.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square1 = true;
                     }
                 }
@@ -592,6 +692,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square4++;
                     if (count_square4 == square4.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square4 = true;
                     }
                 }
@@ -606,6 +707,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square5++;
                     if (count_square5 == square5.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square5 = true;
                     }
                 }
@@ -620,6 +722,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square6++;
                     if (count_square6 == square6.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square6 = true;
                     }
                 }
@@ -634,6 +737,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square7++;
                     if (count_square7 == square7.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square7 = true;
                     }
                 }
@@ -648,6 +752,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square8++;
                     if (count_square8 == square8.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square8 = true;
                     }
                 }
@@ -662,6 +767,7 @@ public class GamePlay extends AppCompatActivity {
                     count_square9++;
                     if (count_square9 == square9.length) {
                         Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
+                        winplayer = true;
                         check_square9 = true;
                     }
                 }
