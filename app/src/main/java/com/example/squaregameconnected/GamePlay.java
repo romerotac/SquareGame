@@ -18,6 +18,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Objects;
@@ -25,6 +26,8 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class GamePlay extends AppCompatActivity {
 
+    TextView point_of_player_1;
+    TextView point_of_player_2;
 
     int integer_color_player1 = Color.GREEN;
     int integer_color_player2 = Color.YELLOW;
@@ -526,13 +529,20 @@ public class GamePlay extends AppCompatActivity {
 
     public void checkGetPoint(){
         String message = "This is the player who got the square: ";
+        int counter_1 = 0;
+        int counter_2 = 0;
 
-        if (setplayer == true){
-            message += "player 1";
-        }else{
-            message += "player 2";
+        point_of_player_1 = findViewById(R.id.first_player_point);
+        point_of_player_2 = findViewById(R.id.second_player_point);
+
+        if (setplayer == true) {
+            counter_1 += 1;
+            message += "player 1" + " " + counter_1;
+        } else {
+            counter_2 += 1;
+            message += "player 2" + " " + counter_2;
         }
-        //Toast.makeText(GamePlay.this,message, Toast.LENGTH_SHORT).show();
+
         int count_square1 = 0;
             if(check_square1 == false) {
                 for (int i = 0; i < square1.length; i++) {
