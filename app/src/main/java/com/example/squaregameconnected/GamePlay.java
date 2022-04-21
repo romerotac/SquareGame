@@ -713,7 +713,7 @@ public class GamePlay extends AppCompatActivity {
                     if (count_square3 == square3.length) {
 //                        Toast.makeText(GamePlay.this, message, Toast.LENGTH_SHORT).show();
                         winplayer = true;
-                        check_square1 = true;
+                        check_square3 = true;
                         if (setplayer) {
                             counter_1++;
                             point_of_player_1.setText(String.valueOf(counter_1));
