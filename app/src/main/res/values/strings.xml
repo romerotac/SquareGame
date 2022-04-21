@@ -4,6 +4,9 @@
     <string name="objective">Objective</string>
     <string name="guide">Guide</string>
     <string name="congratulations">CONGRATULATIONS !!!</string>
+    <string name="details">DETAILS</string>
+    <string name="step_by_step" />
+    <string name="steps_by_steps">STEPS BY STEPS</string>
 
 
     <string-array name="colors">
