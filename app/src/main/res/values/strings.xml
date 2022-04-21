@@ -10,12 +10,12 @@
 
 
     <string-array name="colors">
-        <item>Blue  </item>
-        <item>Cyan </item>
-        <item>Green </item>
-        <item>Magenta </item>
-        <item>Red </item>
-        <item>Yellow </item>
+        <item>Blue</item>
+        <item>Cyan</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Red</item>
+        <item>Yellow</item>
     </string-array>
 
     <string-array name="grid">

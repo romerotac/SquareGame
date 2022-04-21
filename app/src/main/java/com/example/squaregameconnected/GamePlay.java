@@ -32,8 +32,6 @@ public class GamePlay extends AppCompatActivity {
     int counter_1 = 0;
     int counter_2 = 0;
 
-    int integer_color_player1 = Color.GREEN;
-    int integer_color_player2 = Color.YELLOW;
     int integer_color_used;
     int totChecked = 0;
     boolean setplayer = true;
@@ -80,7 +78,7 @@ public class GamePlay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //hide the top part of the app (blue part)
         getSupportActionBar().hide();
-        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         setContentView(R.layout.activity_game_play);
 
@@ -585,6 +583,49 @@ public class GamePlay extends AppCompatActivity {
 
         //}
     }
+
+    public Integer getColorPlayer1(){
+
+        Bundle B = getIntent().getExtras();
+        String color1 = B.getString("ColorPlayer1");
+        int integer_color_player1 = setColor(color1);
+        return integer_color_player1;
+    }
+
+    public Integer getColorPlayer2(){
+
+        Bundle B = getIntent().getExtras();
+        String color2 = B.getString("ColorPlayer2");
+        int integer_color_player2 = setColor(color2);
+        return integer_color_player2;
+    }
+
+    public Integer setColor(String color) {
+        int colorgrade = 0;
+        switch(color){
+            case "Blue":
+                colorgrade = Color.BLUE;
+                break;
+            case "Cyan":
+                colorgrade = Color.CYAN;
+            break;
+            case "Green":
+                colorgrade = Color.GREEN;
+             break;
+            case "Magenta":
+                colorgrade = Color.MAGENTA;
+             break;
+            case "Red":
+                colorgrade = Color.RED;
+             break;
+            case "Yellow":
+                colorgrade = Color.YELLOW;
+             break;
+            default:
+                colorgrade = Color.BLACK;
+        }
+        return colorgrade;
+    }
     public void openGuideActivity() {
         Intent intent = new Intent(this, GuideActivity.class);
         startActivity(intent);
@@ -599,10 +640,10 @@ public class GamePlay extends AppCompatActivity {
     public void setPlayerButtonResponse(){
 
         if (setplayer){
-            integer_color_used = integer_color_player1;
+            integer_color_used = getColorPlayer1();
         }
         else{
-            integer_color_used = integer_color_player2;
+            integer_color_used = getColorPlayer2();
         }
     }
 
