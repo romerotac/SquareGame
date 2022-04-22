@@ -22,7 +22,7 @@ public class SelectionPage extends AppCompatActivity {
 
         setContentView(R.layout.activity_selection_page);
 
-        Spinner gridSpinner = (Spinner) findViewById(R.id.spinner);
+//        Spinner gridSpinner = (Spinner) findViewById(R.id.spinner);
         final Spinner colorPlayer1Spinner = (Spinner) findViewById(R.id.spinner2);
         final Spinner colorPlayer2Spinner = (Spinner) findViewById(R.id.spinner3);
 
@@ -44,7 +44,7 @@ public class SelectionPage extends AppCompatActivity {
         ArrayAdapter < String > myAdapter = new ArrayAdapter<String>(SelectionPage.this,
                         android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.grid));
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        gridSpinner.setAdapter(myAdapter);
+//        gridSpinner.setAdapter(myAdapter);
 
         // referencing player 1 and player2 colors
         ArrayAdapter < String > colorPlayer1Adapter = new ArrayAdapter<String>(SelectionPage.this,
