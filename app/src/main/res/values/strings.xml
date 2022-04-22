@@ -7,6 +7,14 @@
     <string name="details">DETAILS</string>
     <string name="step_by_step" />
     <string name="steps_by_steps">STEPS BY STEPS</string>
+    <string name="player_1">Player 1</string>
+    <string name="start_game">START GAME</string>
+    <string name="player_2">Player 2</string>
+    <string name="local">LOCAL</string>
+    <string name="replay">REPLAY</string>
+    <string name="home">HOME</string>
+    <string name="apply">APPLY</string>
+    <string name="player_1_text">PLAYER 1</string>
 
 
     <string-array name="colors">

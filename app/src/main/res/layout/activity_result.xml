@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BC6E7E">
+    android:background="#305482">
 
     <ImageView
         android:id="@+id/winner_player_profile"
         android:layout_width="178dp"
         android:layout_height="201dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar_1_removed" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="341dp"
-        android:layout_height="75dp"
+        android:layout_width="396dp"
+        android:layout_height="104dp"
         android:layout_marginBottom="236dp"
+        android:fontFamily="@font/ka1"
         android:text="@string/congratulations"
+        android:textColor="@android:color/background_light"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,29 +35,40 @@
 
     <Button
         android:id="@+id/button_replay"
-        android:layout_width="169dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="REPLAY"
-        android:textSize="25sp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="168dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:background="#A2C6E8"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/replay"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_go_home"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+        app:layout_constraintTop_toTopOf="@+id/guideline15"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_go_home"
-        android:layout_width="159dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:text="HOME"
-        android:textSize="25sp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#17233D"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+        app:layout_constraintTop_toTopOf="@+id/guideline15"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/winner_player_text"
@@ -75,4 +88,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="180dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 </androidx.constraintlayout.widget.ConstraintLayout>

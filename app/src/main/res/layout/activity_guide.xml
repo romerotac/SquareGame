@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BC6E7E"
+    android:background="#305482"
     tools:context=".GuideActivity">
 
     <ScrollView
@@ -32,12 +32,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.049"
-                app:srcCompat="@drawable/how_to_play_black_and_yellow_removed" />
+                app:srcCompat="@drawable/howtoplay_pixel" />
 
             <TextView
                 android:id="@+id/objective_text"
-                android:layout_width="161dp"
+                android:layout_width="wrap_content"
                 android:layout_height="44dp"
+                android:fontFamily="@font/press_start_2p"
                 android:text="@string/objective"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
@@ -63,12 +64,13 @@
             <TextView
                 android:id="@+id/guide_text"
                 android:layout_width="363dp"
-                android:layout_height="205dp"
+                android:layout_height="295dp"
                 android:layout_marginBottom="276dp"
+                android:fontFamily="@font/kongtext"
                 android:text="@string/the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"
-                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.666"
