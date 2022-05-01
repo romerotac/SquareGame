@@ -13,7 +13,7 @@
         android:layout_width="289dp"
         android:layout_height="304dp"
         android:layout_marginBottom="152dp"
-        android:background="#E5E5E5"
+        android:background="#305482"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.461"
