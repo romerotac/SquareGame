@@ -13,7 +13,7 @@
         android:layout_width="289dp"
         android:layout_height="304dp"
         android:layout_marginBottom="152dp"
-        android:background="#E5E5E5"
+        android:background="#305482"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.461"
@@ -541,17 +541,17 @@
 
     <ImageView
         android:id="@+id/question_mark_button"
-        android:layout_width="68dp"
-        android:layout_height="63dp"
+        android:layout_width="112dp"
+        android:layout_height="52dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintBottom_toTopOf="@+id/second_player_point"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/question_mark_button" />
+        app:srcCompat="@drawable/question_mark_butoon_4" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
