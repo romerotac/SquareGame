@@ -13,8 +13,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,15 +36,140 @@
                 app:layout_constraintVertical_bias="0.049"
                 app:srcCompat="@drawable/howtoplay_pixel" />
 
+                <TextView
+                    android:id="@+id/objective_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:fontFamily="@font/press_start_2p"
+                    android:text="@string/step_by_step"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toTopOf="@+id/guide_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.168"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/how_to_play_view"
+                    app:layout_constraintVertical_bias="0.494" />
+
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/guide_img"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="305dp"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/guide_text"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/guide_text"-->
+            <!--                app:srcCompat="@drawable/example_game" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/guide_text"-->
+            <!--                android:layout_width="319dp"-->
+            <!--                android:layout_height="204dp"-->
+            <!--                android:layout_marginBottom="276dp"-->
+            <!--                android:fontFamily="sans-serif-medium"-->
+            <!--                android:text="@string/the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner"-->
+            <!--                android:textColor="#FFFFFF"-->
+            <!--                android:textSize="18sp"-->
+            <!--                android:textStyle="normal|bold"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.666"-->
+            <!--                app:layout_constraintStart_toStartOf="parent" />-->
+
+
             <TextView
-                android:id="@+id/objective_text"
-                android:layout_width="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_width="368dp"
                 android:layout_height="47dp"
                 android:fontFamily="@font/press_start_2p"
-                android:text="@string/objective"
+                android:text="@string/steps_by_steps"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="319dp"
+                    android:layout_height="68dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/each_user_will_take_turn_to_complete_a_square_on_a_3x3_grid_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="319dp"
+                    android:layout_height="64dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/player_completes_a_square_will_score_1_point_and_gets_a_bonus_turn"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:layout_width="319dp"
+                    android:layout_height="57dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.666"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/step_1_picture"
+                    app:srcCompat="@drawable/guide_1" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/guide"
+                    app:srcCompat="@drawable/guide_2" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/guide"
+                    app:srcCompat="@drawable/guide_3" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/guide"
+                    app:srcCompat="@drawable/guide_4" />
+
+            <TextView
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="@string/it_s_that_easy"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toTopOf="@+id/guide_text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,36 +178,25 @@
                 app:layout_constraintTop_toBottomOf="@+id/how_to_play_view"
                 app:layout_constraintVertical_bias="0.494" />
 
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/guide"
+                    app:srcCompat="@drawable/guide_11" />
 
-            <ImageView
-                android:id="@+id/guide_img"
-                android:layout_width="wrap_content"
-                android:layout_height="305dp"
-                app:layout_constraintBottom_toBottomOf="@+id/guide_text"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guide_text"
-                app:srcCompat="@drawable/example_game" />
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/guide"
+                 app:srcCompat="@drawable/guide_12" />
 
-            <TextView
-                android:id="@+id/guide_text"
-                android:layout_width="319dp"
-                android:layout_height="351dp"
-                android:layout_marginBottom="276dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="@string/the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="normal|bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.666"
-                app:layout_constraintStart_toStartOf="parent" />
+
         </LinearLayout>
 
 
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

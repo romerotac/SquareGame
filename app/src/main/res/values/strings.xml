@@ -15,6 +15,12 @@
     <string name="home">HOME</string>
     <string name="apply">APPLY</string>
     <string name="player_1_text">PLAYER 1</string>
+    <string name="step_1_picture">step_1_picture</string>
+    <string name="each_user_will_play_by_turns_to_complete_a_square">Each user will take turn to complete a square on a 3x3 grid size. Player completes a square will score 1 point and gets a bonus turn. Completing all squares in the grid, who has a higher score will win the game.</string>
+    <string name="each_user_will_take_turn_to_complete_a_square_on_a_3x3_grid_size">Each user will take turn to complete a square on a 3x3 grid size.</string>
+    <string name="player_completes_a_square_will_score_1_point_and_gets_a_bonus_turn">Player completes a square will score 1 point and gets a bonus turn.</string>
+    <string name="completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game">Completing all squares in the grid, who has a higher score will win the game.</string>
+    <string name="it_s_that_easy">It\'s that easy!!</string>
 
 
     <string-array name="colors">
