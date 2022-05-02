@@ -21,6 +21,7 @@
     <string name="player_completes_a_square_will_score_1_point_and_gets_a_bonus_turn">Player completes a square will score 1 point and gets a bonus turn.</string>
     <string name="completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game">Completing all squares in the grid, who has a higher score will win the game.</string>
     <string name="it_s_that_easy">It\'s that easy!!</string>
+    <string name="pick_your_color">Pick your color</string>
 
 
     <string-array name="colors">

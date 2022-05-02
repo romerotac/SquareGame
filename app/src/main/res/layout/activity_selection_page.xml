@@ -7,33 +7,51 @@
     android:background="#305482"
     tools:context=".SelectionPage">
 
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        android:layout_width="160dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
     <ImageView
         android:id="@+id/question_mark_button"
-        android:layout_width="143dp"
-        android:layout_height="59dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/question_mark_button_6"
+        app:layout_constraintVertical_bias="0.471"
+        app:srcCompat="@drawable/question_mark_new"
         tools:ignore="MissingConstraints" />
 
-<!--    <Spinner-->
-<!--        android:id="@+id/spinner"-->
-<!--        android:layout_width="160dp"-->
-<!--        android:layout_height="55dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/textView"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/textView"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/textView"-->
-<!--        tools:ignore="MissingConstraints" />-->
+    <TextView
+        android:id="@+id/easy"
+        android:layout_width="348dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/pick_your_color"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16"
+        app:layout_constraintVertical_bias="0.551" />
 
     <Button
         android:id="@+id/button_game"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="220dp"
-        android:layout_height="82dp"
+        android:layout_width="260dp"
+        android:layout_height="102dp"
         android:layout_marginTop="52dp"
         android:background="#A2C6E8"
         android:fontFamily="@font/press_start_2p"
@@ -45,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
-        app:layout_constraintVertical_bias="0.287"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
         tools:visibility="visible" />
 
@@ -81,10 +99,10 @@
         android:id="@+id/imageView25"
         android:layout_width="89dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:srcCompat="@drawable/avatar_1_removed" />
 
@@ -103,34 +121,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="403dp" />
+        app:layout_constraintGuide_end="344dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="564dp" />
+        app:layout_constraintGuide_end="525dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="241dp" />
+        app:layout_constraintGuide_end="139dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="29dp" />
+        app:layout_constraintGuide_end="26dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/ka1"
         android:text="@string/player_1"
         android:textColor="@android:color/background_light"
@@ -144,7 +162,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/ka1"
         android:text="PLAYER 2"
         android:textColor="@android:color/background_light"
@@ -153,5 +171,12 @@
         app:layout_constraintHorizontal_bias="0.093"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="116dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
