@@ -89,8 +89,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="355dp"
-        android:layout_height="92dp"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
         app:layout_constraintBottom_toTopOf="@+id/settingsBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
