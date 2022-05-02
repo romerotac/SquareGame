@@ -522,13 +522,13 @@
 
     <ImageView
         android:id="@+id/setting_buttonhome"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
+        android:layout_width="121dp"
+        android:layout_height="85dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.708"
-        app:srcCompat="@drawable/pic" />
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@drawable/music_note_2" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -557,8 +557,8 @@
 
     <ImageView
         android:id="@+id/question_mark_button"
-        android:layout_width="97dp"
-        android:layout_height="65dp"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintBottom_toTopOf="@+id/second_player_point"
