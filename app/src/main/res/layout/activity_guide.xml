@@ -66,7 +66,7 @@
                 android:layout_width="363dp"
                 android:layout_height="295dp"
                 android:layout_marginBottom="276dp"
-                android:fontFamily="@font/kongtext"
+                android:fontFamily="sans-serif-medium"
                 android:text="@string/the_object_of_the_game_is_to_form_a_square_by_joining_four_dots_when_a_player_draws_a_line_that_closes_a_square_she_writes_her_initials_inside_the_square_and_gets_a_bonus_turn_when_all_possible_lines_have_been_drawn_the_player_with_the_most_initialed_squares_is_the_winner"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
