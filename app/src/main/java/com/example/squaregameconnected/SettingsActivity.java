@@ -16,7 +16,7 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
     }
     public void PlayBackgroundSound(View view) {
-        Intent intent = new Intent(SettingsActivity.this, BackgroundSoundService.class);
+        Intent intent = new Intent(this, BackgroundSoundService.class);
         startService(intent);
     }
 }

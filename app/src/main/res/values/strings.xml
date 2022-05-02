@@ -22,6 +22,7 @@
     <string name="completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game">Completing all squares in the grid, who has a higher score will win the game.</string>
     <string name="it_s_that_easy">It\'s that easy!!</string>
     <string name="pick_your_color">Pick your color</string>
+    <string name="you_are_the_winner">YOU ARE THE WINNER</string>
 
 
     <string-array name="colors">

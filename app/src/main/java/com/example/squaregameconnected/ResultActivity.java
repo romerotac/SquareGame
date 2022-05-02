@@ -53,10 +53,10 @@ public class ResultActivity extends AppCompatActivity {
 
         assert result != null;
         if (result.equals("player_1")) {
-            winner_profile.setImageResource(R.drawable.avatar_1_removed);
+            winner_profile.setImageResource(R.drawable.ava_9);
             winner_text.setText("PLAYER 1 !!!");
         } else {
-            winner_profile.setImageResource(R.drawable.avatar_2_removed);
+            winner_profile.setImageResource(R.drawable.ava_6);
             winner_text.setText("PLAYER 2 !!!");
         }
         if (result == "tie"){

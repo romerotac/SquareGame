@@ -97,24 +97,25 @@
 
     <ImageView
         android:id="@+id/imageView25"
-        android:layout_width="89dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="104dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:srcCompat="@drawable/avatar_1_removed" />
+        app:srcCompat="@drawable/ava_9" />
 
     <ImageView
         android:id="@+id/imageView27"
-        android:layout_width="84dp"
-        android:layout_height="89dp"
+        android:layout_width="89dp"
+        android:layout_height="93dp"
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:srcCompat="@drawable/avatar_2_removed" />
+        app:srcCompat="@drawable/ava_6" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
