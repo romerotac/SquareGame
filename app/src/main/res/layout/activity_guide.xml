@@ -81,8 +81,8 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="368dp"
-                android:layout_height="47dp"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
                 android:fontFamily="@font/press_start_2p"
                 android:text="@string/steps_by_steps"
                 android:textAllCaps="true"
@@ -119,28 +119,28 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
 
-                <TextView
-                    android:layout_width="319dp"
-                    android:layout_height="57dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="normal|bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.666"
-                    app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:layout_width="319dp"
+                android:layout_height="73dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/completing_all_squares_in_the_grid_who_has_a_higher_score_will_win_the_game"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
-                <ImageView
-                    android:id="@+id/imageView23"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/step_1_picture"
-                    app:srcCompat="@drawable/guide_1" />
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/step_1_picture"
+                app:srcCompat="@drawable/guide_1" />
 
-                <ImageView
+            <ImageView
                     android:id="@+id/imageView24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

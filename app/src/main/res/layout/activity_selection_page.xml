@@ -19,21 +19,21 @@
 
     <ImageView
         android:id="@+id/question_mark_button"
-        android:layout_width="113dp"
-        android:layout_height="45dp"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471"
+        app:layout_constraintVertical_bias="0.445"
         app:srcCompat="@drawable/question_mark_new"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/easy"
-        android:layout_width="348dp"
-        android:layout_height="32dp"
+        android:layout_width="309dp"
+        android:layout_height="30dp"
         android:fontFamily="@font/press_start_2p"
         android:text="@string/pick_your_color"
         android:textAllCaps="true"
@@ -42,16 +42,15 @@
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline16"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.245" />
 
     <Button
         android:id="@+id/button_game"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="260dp"
-        android:layout_height="102dp"
+        android:layout_width="258dp"
+        android:layout_height="83dp"
         android:layout_marginTop="52dp"
         android:background="#A2C6E8"
         android:fontFamily="@font/press_start_2p"
@@ -60,7 +59,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline13"
         app:layout_constraintVertical_bias="1.0"
@@ -178,6 +177,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="116dp" />
+        app:layout_constraintGuide_begin="94dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
